@@ -1,0 +1,82 @@
+//?===========================Button===========================
+.button {
+	position: relative;
+	z-index: 2;
+	display: inline-block;
+	text-align: center;
+	background-color: var(--button-bg-color);
+	border-radius: 50px;
+	padding: 16px 30px;
+	color: var(--main-light-color);
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 1.43; /* 22/14 */
+	letter-spacing: 2px;
+	transition: background-color 0.3s ease-in-out;
+
+	&:hover {
+		background-color: var(--accent-color);
+	}
+
+	@media (max-width: $tablet) {
+		padding: 14px 20px;
+	}
+
+	&_dark {
+		background-color: rgba(129, 129, 139, 0.2);
+		&:hover {
+			background-color: rgba(211, 211, 217, 0.2);
+		}
+	}
+}
+//?===========================BEM header===========================
+.header-main {
+	// .header-main__title
+	&__title {
+		font-weight: 500;
+		font-size: 51px;
+		line-height: 1.19; /* 61/51 */
+		color: var(--main-light-color);
+
+		&:not(:last-child) {
+			margin-bottom: 28px;
+		}
+		@media (min-width: $mobile) {
+			max-width: 505px;
+		}
+		@media (max-width: $tablet) {
+			font-size: 44px;
+		}
+		@media (max-width: $mobile) {
+			font-size: 32px;
+			&:not(:last-child) {
+				margin-bottom: 10px;
+			}
+		}
+	}
+
+	// .header-main__text
+	&__text {
+		font-weight: 300;
+		font-size: 18px;
+		line-height: 1.5;
+		color: var(--second-text-color);
+
+		&:not(:last-child) {
+			margin-bottom: 33px;
+		}
+		@media (max-width: $tablet) {
+			&:not(:last-child) {
+				margin-bottom: 25px;
+			}
+		}
+		@media (max-width: $mobile) {
+			&:not(:last-child) {
+				margin-bottom: 15px;
+			}
+		}
+		@media (min-width: $mobile) {
+			max-width: 460px;
+		}
+	}
+}

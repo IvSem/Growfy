@@ -1,6 +1,11 @@
 @import '_veriable';
 .header {
-	// .header__container
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 50;
+	background-color: #0d0d1182; // .header__container
 	&__container {
 		display: flex;
 		column-gap: 35px;
@@ -19,6 +24,7 @@
 
 	// .header__logo
 	&__logo {
+		padding-left: 7px;
 		position: relative;
 		z-index: 2;
 
@@ -26,15 +32,6 @@
 			flex: 0 0 43px;
 			overflow: hidden;
 		}
-	}
-
-	// .header__menu
-	&__menu {
-		flex: 1 1 auto;
-	}
-
-	// .header__cart
-	&__cart {
 	}
 
 	// .header__button
@@ -89,10 +86,6 @@
 			justify-content: center;
 			text-align: center;
 		}
-	}
-
-	// .menu__item
-	&__item {
 	}
 
 	// .menu__link

@@ -4,7 +4,8 @@
 @import '_reset';
 @import '_veriable';
 @import '_header';
-@import '_ui';
+@import '_common';
+@import '_mainpage';
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,regular,500&display=swap&subset=cyrillic-ext');
 
@@ -29,6 +30,6 @@ body {
 	padding: 0px 15px 0px 15px;
 	margin: 0 auto;
 }
-main {
+.page {
 	flex: 1 1 auto;
 }
