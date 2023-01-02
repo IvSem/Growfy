@@ -1,0 +1,19 @@
+:root {
+	// --main-dark-color: #303030;
+	--main-light-color: #ffffff;
+	--main-text-color: #81818b;
+	--main-bg-color: #0d0d11;
+	--burger-bg-color: #063948;
+	--card-bg-color: rgba(129, 129, 139, 0.2);
+	--button-bg-color: #3d96f4;
+	--accent-color: #58ceef;
+	// --color-text-about: #555555;
+	// --color-text-form: #757575;
+
+	--trans: 0.3s ease-in-out;
+}
+
+$pc: 1310px;
+$tablet: 991.98px; // Планшеты, некоторые телефоны в горизонтальном положении
+$mobile: 767.98px; // Телефоны L
+$mobileSmall: 479.98px; // Телефоны S
