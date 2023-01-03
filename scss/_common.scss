@@ -31,7 +31,23 @@
 }
 //?===========================BEM header===========================
 .header-main {
-	// .header-main__title
+	//*.header-main__label
+	&__label {
+		display: inline-block;
+		padding: 11px 18px;
+		font-size: 11px;
+		line-height: 1.6;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		border: 1px solid rgba(129, 129, 139, 0.2);
+		border-radius: 12px;
+		color: var(--second-text-color);
+		&:not(:last-child) {
+			margin-bottom: 20px;
+		}
+	}
+
+	//* .header-main__title
 	&__title {
 		font-weight: 500;
 		font-size: 51px;
@@ -42,7 +58,7 @@
 			margin-bottom: 28px;
 		}
 		@media (min-width: $mobile) {
-			max-width: 505px;
+			max-width: 520px;
 		}
 		@media (max-width: $tablet) {
 			font-size: 44px;
@@ -55,7 +71,7 @@
 		}
 	}
 
-	// .header-main__text
+	//* .header-main__text
 	&__text {
 		font-weight: 300;
 		font-size: 18px;
@@ -76,7 +92,18 @@
 			}
 		}
 		@media (min-width: $mobile) {
-			max-width: 460px;
+			max-width: 500px;
+		}
+	}
+
+	//*.header-main__actions
+	&__actions {
+		display: flex;
+		gap: 15px 32px;
+		@media (max-width: $tablet) {
+		}
+		@media (max-width: $mobileSmall) {
+			flex-direction: column;
 		}
 	}
 }

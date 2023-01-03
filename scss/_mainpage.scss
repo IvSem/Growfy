@@ -19,6 +19,7 @@
 	// .main__content
 	&__content {
 		flex: 0 1 50%;
+		align-self: center;
 
 		@media (max-width: $mobile) {
 			align-self: stretch;
@@ -36,20 +37,6 @@
 			width: 123px;
 			height: 123px;
 			background: url('../img/main/decor-main.svg') 0 0 /100% no-repeat;
-		}
-	}
-}
-
-.header-main {
-	// .header-main__actions
-	&__actions {
-		display: flex;
-		gap: 15px 32px;
-		@media (max-width: $tablet) {
-			justify-content: center;
-		}
-		@media (max-width: $mobileSmall) {
-			flex-direction: column;
 		}
 	}
 }
