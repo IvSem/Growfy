@@ -43,6 +43,7 @@
 //?===========================menu-header + burger===========================
 
 .menu {
+	flex: 1 1 auto;
 	//.menu__body
 	&__body {
 		overflow: auto;
