@@ -548,18 +548,60 @@ button {
 .clients__title:not(:last-child) {
   margin-bottom: 44px;
 }
-.clients__items {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 10px 15px;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-.clients__item img {
+.clients__slide img {
   max-width: 100%;
+}
+
+.clients__slide {
+  position: relative;
+}
+.clients .swiper-button-next::after {
+  display: none;
+}
+.clients .swiper-button-next::before {
+  content: "";
+  position: absolute;
+  top: -80%;
+  width: 115px;
+  height: 64px;
+  background: -webkit-gradient(linear, right top, left top, color-stop(8%, rgba(61, 149, 244, 0.5019607843)), to(rgba(0, 0, 0, 0)));
+  background: -o-linear-gradient(right, rgba(61, 149, 244, 0.5019607843) 8%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(270deg, rgba(61, 149, 244, 0.5019607843) 8%, rgba(0, 0, 0, 0) 100%);
+}
+@media (max-width: 479.98px) {
+  .clients .swiper-button-next::before {
+    width: 50px;
+  }
+}
+.clients .swiper-button-prev::after {
+  display: none;
+}
+.clients .swiper-button-prev::before {
+  content: "";
+  position: absolute;
+  top: -80%;
+  width: 115px;
+  height: 64px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(8%, rgba(61, 149, 244, 0.5019607843)), to(rgba(0, 0, 0, 0)));
+  background: -o-linear-gradient(left, rgba(61, 149, 244, 0.5019607843) 8%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(90deg, rgba(61, 149, 244, 0.5019607843) 8%, rgba(0, 0, 0, 0) 100%);
+}
+@media (max-width: 479.98px) {
+  .clients .swiper-button-prev::before {
+    width: 50px;
+  }
+}
+.clients .swiper {
+  width: 90%;
+  padding: 0px 0px 20px 0px;
+}
+@media (max-width: 479.98px) {
+  .clients .swiper {
+    width: 100%;
+  }
+}
+.clients .swiper-wrapper {
+  padding-bottom: 10px;
 }
 
 body {

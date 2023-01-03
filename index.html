@@ -7,6 +7,10 @@
 		<title>Growfy</title>
 		<link rel="stylesheet" href="./css/style.css" />
 		<link rel="icon" type="" href="./img/favico/favicon.png" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+		/>
 	</head>
 	<body>
 		<div class="wrapper">
@@ -96,34 +100,46 @@
 						</div>
 					</div>
 				</section>
-
+				<!--? =====Page-Clients + slider===== -->
 				<section class="page__clients clients">
 					<div class="clients__container">
 						<h2 class="clients__title">
 							TRUSTED BY startups and large enterprises
 						</h2>
-						<ul class="clients__items">
-							<li class="clients__item">
-								<img src="./img/main/clients/clients01.svg" alt="clients" />
-							</li>
-							<li class="clients__item">
-								<img src="./img/main/clients/clients02.svg" alt="clients" />
-							</li>
-							<li class="clients__item">
-								<img src="./img/main/clients/clients03.svg" alt="clients" />
-							</li>
-							<li class="clients__item">
-								<img src="./img/main/clients/clients04.svg" alt="clients" />
-							</li>
-							<li class="clients__item">
-								<img src="./img/main/clients/clients05.svg" alt="clients" />
-							</li>
-						</ul>
+
+						<!-- Оболочка слайдера -->
+						<div class="clients__slider swiper">
+							<!-- Двигающееся часть слайдера -->
+							<ul class="clients__wrapper swiper-wrapper">
+								<!-- Слайд -->
+								<li class="clients__slide swiper-slide">
+									<img src="./img/main/clients/clients01.svg" alt="clients" />
+								</li>
+								<li class="clients__slide swiper-slide">
+									<img src="./img/main/clients/clients02.svg" alt="clients" />
+								</li>
+								<li class="clients__slide swiper-slide">
+									<img src="./img/main/clients/clients03.svg" alt="clients" />
+								</li>
+								<li class="clients__slide swiper-slide">
+									<img src="./img/main/clients/clients04.svg" alt="clients" />
+								</li>
+								<li class="clients__slide swiper-slide">
+									<img src="./img/main/clients/clients05.svg" alt="clients" />
+								</li>
+							</ul>
+							<!-- Если нужна пагинация -->
+							<div class="swiper-pagination"></div>
+							<!-- Если нужна навигация (влево/вправо) -->
+							<button type="button" class="swiper-button-prev"></button>
+							<button type="button" class="swiper-button-next"></button>
+						</div>
 					</div>
 				</section>
 			</main>
 			<footer class="footer"></footer>
 		</div>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 		<script src="./js/script.js"></script>
 	</body>
 </html>

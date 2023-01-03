@@ -29,18 +29,62 @@
 		}
 	}
 
-	// .clients__items
-	&__items {
-		display: flex;
-		flex-wrap: wrap;
-		gap: 10px 15px;
-		justify-content: space-around;
-	}
-
 	// .clients__item
-	&__item {
+	&__slide {
 		& img {
 			max-width: 100%;
 		}
+	}
+}
+
+//?===========================slider===========================
+.clients {
+	// .clients__slide
+	&__slide {
+		position: relative;
+	}
+	//?===========================buttons prev next===========================
+	& .swiper-button-next::after {
+		display: none;
+	}
+
+	& .swiper-button-next::before {
+		content: '';
+
+		position: absolute;
+		top: -80%;
+		width: 115px;
+		height: 64px;
+		background: linear-gradient(270deg, #3d95f480 8%, rgba(0, 0, 0, 0) 100%);
+		@media (max-width: $mobileSmall) {
+			width: 50px;
+		}
+	}
+
+	& .swiper-button-prev::after {
+		display: none;
+	}
+
+	& .swiper-button-prev::before {
+		content: '';
+
+		position: absolute;
+		top: -80%;
+		width: 115px;
+		height: 64px;
+		background: linear-gradient(90deg, #3d95f480 8%, rgba(0, 0, 0, 0) 100%);
+		@media (max-width: $mobileSmall) {
+			width: 50px;
+		}
+	}
+	& .swiper {
+		width: 90%;
+		padding: 0px 0px 20px 0px;
+		@media (max-width: $mobileSmall) {
+			width: 100%;
+		}
+	}
+	& .swiper-wrapper {
+		padding-bottom: 10px;
 	}
 }
