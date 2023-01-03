@@ -14,6 +14,7 @@ const swiper = new Swiper('.swiper', {
 
 	pagination: {
 		el: '.swiper-pagination',
+		clickable: true,
 	},
 
 	navigation: {
@@ -29,7 +30,7 @@ const swiper = new Swiper('.swiper', {
 	autoplay: {
 		delay: 3000,
 	},
-	speed: 2000,
+	speed: 1000,
 
 	breakpoints: {
 		320: {

@@ -27,6 +27,12 @@
 		&:not(:last-child) {
 			margin-bottom: 44px;
 		}
+		@media (max-width: $mobileSmall) {
+			font-size: 10px;
+			&:not(:last-child) {
+				margin-bottom: 15px;
+			}
+		}
 	}
 
 	// .clients__item
@@ -42,6 +48,16 @@
 	// .clients__slide
 	&__slide {
 		position: relative;
+	}
+	& .swiper {
+		width: 90%;
+		padding: 0px 0px 20px 0px;
+		@media (max-width: $mobileSmall) {
+			width: 100%;
+		}
+	}
+	& .swiper-wrapper {
+		padding-bottom: 10px;
 	}
 	//?===========================buttons prev next===========================
 	& .swiper-button-next::after {
@@ -77,14 +93,19 @@
 			width: 50px;
 		}
 	}
-	& .swiper {
-		width: 90%;
-		padding: 0px 0px 20px 0px;
-		@media (max-width: $mobileSmall) {
-			width: 100%;
-		}
+	& .swiper-pagination {
+		bottom: 3px !important;
 	}
-	& .swiper-wrapper {
-		padding-bottom: 10px;
+
+	& .swiper-pagination-bullet {
+		background: var(--button-bg-color);
+		@media (max-width: $mobile) {
+			width: 6px;
+			height: 6px;
+		}
+		@media (max-width: $mobileSmall) {
+			width: 4px;
+			height: 4px;
+		}
 	}
 }

@@ -548,12 +548,32 @@ button {
 .clients__title:not(:last-child) {
   margin-bottom: 44px;
 }
+@media (max-width: 479.98px) {
+  .clients__title {
+    font-size: 10px;
+  }
+  .clients__title:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
 .clients__slide img {
   max-width: 100%;
 }
 
 .clients__slide {
   position: relative;
+}
+.clients .swiper {
+  width: 90%;
+  padding: 0px 0px 20px 0px;
+}
+@media (max-width: 479.98px) {
+  .clients .swiper {
+    width: 100%;
+  }
+}
+.clients .swiper-wrapper {
+  padding-bottom: 10px;
 }
 .clients .swiper-button-next::after {
   display: none;
@@ -591,17 +611,23 @@ button {
     width: 50px;
   }
 }
-.clients .swiper {
-  width: 90%;
-  padding: 0px 0px 20px 0px;
+.clients .swiper-pagination {
+  bottom: 3px !important;
 }
-@media (max-width: 479.98px) {
-  .clients .swiper {
-    width: 100%;
+.clients .swiper-pagination-bullet {
+  background: var(--button-bg-color);
+}
+@media (max-width: 767.98px) {
+  .clients .swiper-pagination-bullet {
+    width: 6px;
+    height: 6px;
   }
 }
-.clients .swiper-wrapper {
-  padding-bottom: 10px;
+@media (max-width: 479.98px) {
+  .clients .swiper-pagination-bullet {
+    width: 4px;
+    height: 4px;
+  }
 }
 
 body {
