@@ -7,7 +7,7 @@ function documentClick(e) {
 	}
 }
 
-//?===========================slider===========================
+//?===========================slider=====1======================
 
 const swiper = new Swiper('.swiper', {
 	loop: true,
@@ -62,7 +62,7 @@ const swiper = new Swiper('.swiper', {
 		},
 	},
 });
-
+//?===========================slider======2=====================
 const swiperText = new Swiper('.swipertext', {
 	loop: true,
 
@@ -79,7 +79,64 @@ const swiperText = new Swiper('.swipertext', {
 	simulateTouch: true,
 	grabCursor: true,
 	slidesPerView: 3,
-	spaceBetween: 48,
+
+	breakpoints: {
+		320: {
+			slidesPerView: 1,
+			spaceBetween: 16,
+		},
+		374.98: {
+			slidesPerView: 1.2,
+			spaceBetween: 16,
+		},
+
+		424.98: {
+			slidesPerView: 1.2,
+			spaceBetween: 20,
+		},
+		540: {
+			slidesPerView: 1.5,
+			spaceBetween: 25,
+		},
+		690: {
+			slidesPerView: 2,
+			spaceBetween: 30,
+		},
+		767.98: {
+			slidesPerView: 2.2,
+			spaceBetween: 30,
+		},
+
+		991.98: {
+			slidesPerView: 2.8,
+
+			spaceBetween: 38,
+		},
+		1095: {
+			slidesPerView: 3,
+
+			spaceBetween: 48,
+		},
+
+		// 540: {
+		// 	slidesPerView: 1.5,
+		// 	spaceBetween: 28,
+		// },
+		// 690: {
+		// 	slidesPerView: 2,
+		// 	spaceBetween: 18,
+		// },
+
+		// 991.98: {
+		// 	slidesPerView: 2.8,
+		// 	spaceBetween: 28,
+		// },
+
+		// 1150: {
+		// 	slidesPerView: 3,
+		// 	spaceBetween: 48,
+		// },
+	},
 });
 
 //?===========================Raiting===========================

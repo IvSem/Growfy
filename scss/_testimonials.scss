@@ -49,6 +49,40 @@
 		position: relative;
 		min-width: 0;
 		overflow: hidden;
+		@media (max-width: $mobile) {
+			& .swiper-button-next,
+			& .swiper-button-prev {
+				height: 0;
+				width: 10px;
+			}
+
+			& .swiper-button-next::after,
+			& .swiper-button-prev::after {
+				font-size: 25px;
+			}
+		}
+
+		@media (max-width: $mobileSmall) {
+			& .swiper-button-next::after,
+			& .swiper-button-prev::after {
+				font-size: 20px;
+			}
+		}
+	}
+
+	&__wrapper {
+	}
+
+	& .swiper-pagination-bullet {
+		background: var(--button-bg-color);
+		@media (max-width: $mobile) {
+			width: 6px;
+			height: 6px;
+		}
+		@media (max-width: $mobileSmall) {
+			width: 4px;
+			height: 4px;
+		}
 	}
 }
 
@@ -69,6 +103,9 @@
 		line-height: 1.4;
 
 		color: var(--main-light-color);
+		@media (max-width: $mobileSmall) {
+			font-size: 28px;
+		}
 	}
 
 	// .item-testimonial__text
