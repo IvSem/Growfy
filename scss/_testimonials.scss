@@ -1,0 +1,139 @@
+.testimonials {
+	padding: 100px 0px 100px 0px;
+	@media (max-width: $tablet) {
+		padding: 50px 0px 50px 0px;
+	}
+	@media (max-width: $mobile) {
+		padding: 30px 0px 30px 0px;
+	}
+	// .testimonials__container
+	&__container {
+	}
+
+	// .testimonials__content
+	&__content {
+	}
+
+	// .testimonials__header
+	&__header {
+		margin-bottom: 64px;
+		@media (max-width: $tablet) {
+			margin-bottom: 32px;
+		}
+		@media (max-width: $mobile) {
+			margin-bottom: 16px;
+		}
+		& .header-main__title {
+			max-width: none;
+		}
+		& .header-main__text {
+			max-width: 740px;
+		}
+	}
+
+	// .testimonials__items
+	&__items {
+		display: grid;
+		gap: 48px;
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	// .testimonials__item
+	&__item {
+		padding: 64px 40px;
+		background-color: var(--card-bg-color);
+		border-radius: 30px;
+	}
+
+	&__slider {
+		position: relative;
+		min-width: 0;
+		overflow: hidden;
+	}
+}
+
+.item-testimonial {
+	display: grid;
+	gap: 32px;
+	@media (max-width: $mobileSmall) {
+		gap: 16px;
+	}
+	// .item-testimonial__user
+	&__user {
+	}
+
+	// .item-testimonial__title
+	&__title {
+		font-weight: 400;
+		font-size: 32px;
+		line-height: 1.4;
+
+		color: var(--main-light-color);
+	}
+
+	// .item-testimonial__text
+	&__text {
+		line-height: 1.5;
+		color: var(--second-text-color);
+	}
+
+	// .item-testimonial__rating
+	&__rating {
+	}
+}
+
+.user-testimonial {
+	display: flex;
+	gap: 16px;
+	align-items: center;
+
+	// .user-testimonial__avatar
+	&__avatar {
+		flex: 0 0 68px;
+		overflow: hidden;
+		// .user-testimonial__avatar_1
+		&_1 {
+			& img {
+				transform: scale(1.05);
+			}
+			border-radius: 0% 50% 50% 50%;
+		}
+		&_2 {
+			& img {
+				transform: scale(1.05);
+			}
+			border-radius: 50% 0% 50% 50%;
+		}
+		&_3 {
+			& img {
+				transform: scale(1.05);
+			}
+			border-radius: 50% 50% 0% 50%;
+		}
+		& img {
+			max-width: 100%;
+		}
+	}
+
+	// .user-testimonial__body
+	&__body {
+	}
+
+	// .user-testimonial__title
+	&__title {
+		line-height: 1.5;
+
+		color: var(--main-light-color);
+		&:not(:last-child) {
+			margin-bottom: 7px;
+		}
+	}
+
+	// .uer-testimonial__company
+	&__company {
+		font-size: 14px;
+		line-height: 1.6;
+
+		color: var(--second-text-color);
+	}
+}

@@ -1,0 +1,70 @@
+.why {
+	padding: 100px 0px 100px 0px;
+	@media (max-width: $tablet) {
+		padding: 50px 0px 50px 0px;
+	}
+	@media (max-width: $mobile) {
+		padding: 30px 0px 30px 0px;
+	}
+
+	// .why__container
+	&__container {
+		display: flex;
+		gap: 32px 64px;
+		@media (max-width: $mobile) {
+			flex-direction: column-reverse;
+		}
+	}
+
+	// .why__images
+	&__images {
+		flex: 1 1 50%;
+	}
+
+	// .why__content
+	&__content {
+		flex: 1 1 50%;
+		align-self: center;
+	}
+}
+
+//?=========================== Why - images===========================
+.images-why {
+	display: flex;
+	align-self: flex-end;
+	position: relative;
+	@media (max-width: $mobile) {
+		align-self: center;
+	}
+
+	&::before {
+		position: absolute;
+		bottom: 0;
+		left: -9px;
+		content: '';
+		width: 123px;
+		height: 123px;
+		background: url('../img/main/decor-main.svg') 0 0 /100% no-repeat;
+	}
+
+	// .images-why__item
+	&__item {
+		overflow: hidden;
+		& img {
+			max-width: 100%;
+		}
+
+		// .images-why__item_1
+		&_1 {
+			z-index: 2;
+			// position: relative;
+			border-radius: 90% 0 50% 50% / 50% 0 30% 30%;
+		}
+
+		// .images-why__item_2
+		&_2 {
+			align-self: flex-end;
+			border-radius: 50% 50% 50% 0;
+		}
+	}
+}

@@ -96,6 +96,27 @@
 		}
 	}
 
+	&__body {
+		display: flex;
+		justify-content: space-between;
+		gap: 20px;
+		& .header-main__text {
+			margin: 0;
+		}
+		& .header-main__actions {
+			align-self: flex-end;
+			flex: 0 0 auto;
+
+			@media (max-width: $tablet) {
+				align-self: stretch;
+			}
+		}
+		@media (max-width: $tablet) {
+			flex-direction: column;
+			gap: 15px;
+		}
+	}
+
 	//*.header-main__actions
 	&__actions {
 		display: flex;
@@ -104,6 +125,26 @@
 		}
 		@media (max-width: $mobileSmall) {
 			flex-direction: column;
+		}
+	}
+
+	//*.header-main__button
+	&__button {
+	}
+
+	// *.header-main__list
+	&__list {
+	}
+
+	// *.header-main__list
+	&__item {
+		min-height: 40px;
+		padding: 9px 0px 0px 42px;
+		line-height: 1.5;
+		color: var(--second-text-color);
+		background: url('../img/main/why/list-mark.svg') center left no-repeat;
+		&:not(:last-child) {
+			margin-bottom: 16px;
 		}
 	}
 }
