@@ -1,20 +1,5 @@
 /* Подключаем шрифты(берем их с собой) */
 /* &display=swap&subset=cyrillic-ext */
-
-@import '_reset';
-@import '_veriable';
-@import '_header';
-@import '_common';
-@import '_mainpage';
-@import '_clients';
-@import '_services';
-@import '_why';
-@import '_advantages';
-@import '_testimonials';
-@import '_raiting';
-@import '_blog';
-@import '_start';
-
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,regular,500&display=swap&subset=cyrillic-ext');
 
 body {
@@ -41,3 +26,18 @@ body {
 .page {
 	flex: 1 1 auto;
 }
+
+@import '_reset';
+@import '_veriable';
+@import '_header';
+@import '_common';
+@import '_mainpage';
+@import '_clients';
+@import '_services';
+@import '_why';
+@import '_advantages';
+@import '_testimonials';
+@import '_raiting';
+@import '_blog';
+@import '_start';
+@import '_footer';

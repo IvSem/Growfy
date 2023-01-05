@@ -1,14 +1,12 @@
 .start {
-	padding: 100px 0px 100px 0px;
+	padding: 100px 0px 160px 0px;
 	@media (max-width: $tablet) {
-		padding: 50px 0px 50px 0px;
+		padding: 50px 0px 150px 0px;
 	}
 	@media (max-width: $mobile) {
-		padding: 30px 0px 30px 0px;
+		padding: 30px 0px 80px 0px;
 	}
-	// .start__container
-	&__container {
-	}
+
 	&__body {
 		background: rgba(129, 129, 139, 0.1);
 		border-radius: 30px;
@@ -19,15 +17,16 @@
 			flex-direction: column;
 			row-gap: 20px;
 		}
+		@media (max-width: $mobileSmall) {
+			align-items: stretch;
+			padding: 30px 15px;
+		}
 	}
 
 	// .start__column
 	&__column {
 		flex: 0 1 50%;
 		text-align: center;
-		@media (max-width: $mobileSmall) {
-			width: 100%;
-		}
 	}
 
 	// .start__title
@@ -39,6 +38,9 @@
 		color: var(--main-light-color);
 		&:not(:last-child) {
 			margin-bottom: 16px;
+		}
+		@media (max-width: $mobile) {
+			font-size: 24px;
 		}
 	}
 
@@ -56,9 +58,5 @@
 		@media (max-width: $mobileSmall) {
 			flex-direction: column;
 		}
-	}
-
-	// .start__button
-	&__button {
 	}
 }

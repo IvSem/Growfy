@@ -11,6 +11,7 @@
 	font-size: 14px;
 	font-weight: 500;
 	line-height: 1.43; /* 22/14 */
+	cursor: pointer;
 	letter-spacing: 2px;
 	transition: background-color 0.3s ease-in-out;
 
@@ -128,13 +129,6 @@
 		}
 	}
 
-	//*.header-main__button
-	&__button {
-	}
-
-	// *.header-main__list
-	&__list {
-	}
 
 	// *.header-main__list
 	&__item {
